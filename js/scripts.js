@@ -8,18 +8,19 @@ function appendText(selector, text) {
   });
 }
 function catDog() {
-    appendText("ul#user", "<li>Meow</li>");
-    appendText("ul#webpage", "<li>Bark!!</li>");
+  appendText("ul#user", "<li>Meow</li>");
+  appendText("ul#webpage", "<li>Bark!!</li>");
 }
 
 function yellAtUser() {
-    alert($("#asdf").val().toUpperCase());
+  alert($("#asdf").val().toUpperCase());
 }
 
 function replaceText(selector) {
   $("span."+selector).text($("#"+selector).val());
 }
 $(document).ready(function(){
+  // why is the document ready here instead of at the top of this doc?
   $("#closemodal").click(function(){
     $(".modal").hide();
   });
